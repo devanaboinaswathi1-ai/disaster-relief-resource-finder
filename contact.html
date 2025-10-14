@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Disaster Relief Resource Finder</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .content-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+        .contact-section {
+            background: var(--card);
+            border: 1px solid #14242a;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+        }
+        .contact-section h2 {
+            color: var(--accent);
+            margin-top: 0;
+            font-size: 24px;
+            border-bottom: 2px solid #1b2d35;
+            padding-bottom: 12px;
+        }
+        .contact-section h3 {
+            color: #d8f2ef;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .contact-section p, .contact-section ul {
+            color: var(--muted);
+            line-height: 1.8;
+            font-size: 15px;
+        }
+        .contact-section ul {
+            padding-left: 20px;
+        }
+        .contact-section li {
+            margin-bottom: 12px;
+        }
+        .emergency-banner {
+            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+            color: white;
+            padding: 20px 24px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            text-align: center;
+            font-size: 18px;
+        }
+        .emergency-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+        .emergency-card {
+            background: linear-gradient(135deg, #0f1a1f 0%, #14242a 100%);
+            border: 2px solid #ef4444;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+        .emergency-card h4 {
+            color: #ef4444;
+            margin: 0 0 8px 0;
+            font-size: 16px;
+        }
+        .emergency-card .number {
+            color: var(--accent);
+            font-size: 28px;
+            font-weight: bold;
+            margin: 8px 0;
+        }
+        .emergency-card p {
+            color: var(--muted);
+            font-size: 14px;
+            margin: 8px 0 0;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+        .contact-card {
+            background: #0f1a1f;
+            border: 1px solid #1a2c33;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .contact-card h4 {
+            color: var(--accent);
+            margin-top: 0;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .contact-card p {
+            margin: 8px 0;
+            font-size: 14px;
+        }
+        .contact-card a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+        .back-link {
+            display: inline-block;
+            color: var(--accent);
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .info-banner {
+            background: linear-gradient(135deg, #2dd4bf 0%, #14b8a6 100%);
+            color: #083b35;
+            padding: 16px 24px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .state-contacts {
+            margin-top: 16px;
+        }
+        .state-item {
+            background: #0f1a1f;
+            border-left: 3px solid var(--accent);
+            padding: 12px 16px;
+            margin-bottom: 12px;
+            border-radius: 4px;
+        }
+        .state-item strong {
+            color: #d8f2ef;
+            display: block;
+            margin-bottom: 4px;
+        }
+        .state-item span {
+            color: var(--accent);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <header class="topbar">
+        <h1>Disaster Relief Resource Finder</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="content-wrapper">
+        <a href="index.html" class="back-link">← Back to Map</a>
+
+        <div class="emergency-banner">
+            ⚠️ EMERGENCY? CALL IMMEDIATELY - Don't wait!
+        </div>
+
+        <div class="contact-section">
+            <h2>National Emergency Helplines</h2>
+            <p>These numbers are available 24/7 across India. Save them in your phone now!</p>
+            
+            <div class="emergency-grid">
+                <div class="emergency-card">
+                    <h4>🚨 NDRF</h4>
+                    <div class="number">1800-425-0000</div>
+                    <p>National Disaster Response Force</p>
+                </div>
+                <div class="emergency-card">
+                    <h4>🚑 Ambulance</h4>
+                    <div class="number">108</div>
+                    <p>Emergency Medical Services</p>
+                </div>
+                <div class="emergency-card">
+                    <h4>👮 Police</h4>
+                    <div class="number">100</div>
+                    <p>Police Emergency</p>
+                </div>
+                <div class="emergency-card">
+                    <h4>🔥 Fire</h4>
+                    <div class="number">101</div>
+                    <p>Fire & Rescue Services</p>
+                </div>
+                <div class="emergency-card">
+                    <h4>⚠️ Disaster</h4>
+                    <div class="number">1070</div>
+                    <p>State Disaster Management</p>
+                </div>
+                <div class="emergency-card">
+                    <h4>👩 Women</h4>
+                    <div class="number">1091</div>
+                    <p>Women Helpline</p>
+                </div>
+                <div class="emergency-card">
+                    <h4>👶 Child</h4>
+                    <div class="number">1098</div>
+                    <p>Child Helpline</p>
+                </div>
+                <div class="emergency-card">
+                    <h4>👴 Senior</h4>
+                    <div class="number">14567</div>
+                    <p>Senior Citizen Helpline</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-section">
+            <h2>Andhra Pradesh State Contacts</h2>
+            
+            <div class="state-contacts">
+                <div class="state-item">
+                    <strong>AP State Disaster Management Authority</strong>
+                    Phone: <span>0863-2340100</span><br>
+                    Email: <span>apdma@ap.gov.in</span><br>
+                    Website: <span>www.apdma.ap.gov.in</span>
+                </div>
+                
+                <div class="state-item">
+                    <strong>AP Emergency Operations Center</strong>
+                    Phone: <span>0863-2340101</span><br>
+                    Toll-Free: <span>1800-425-0101</span><br>
+                    Available: <span>24/7</span>
+                </div>
+                
+                <div class="state-item">
+                    <strong>AP Fire Services</strong>
+                    Phone: <span>101</span><br>
+                    Control Room: <span>0863-2340102</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-section">
+            <h2>District Emergency Contacts</h2>
+            
+            <h3>Visakhapatnam District</h3>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h4>🏛️ District Collectorate</h4>
+                    <p><strong>Phone:</strong> <a href="tel:0891-2746464">0891-2746464</a></p>
+                    <p><strong>Emergency:</strong> <a href="tel:0891-2746400">0891-2746400</a></p>
+                    <p><strong>Email:</strong> collector_vsp@ap.gov.in</p>
+                </div>
+                <div class="contact-card">
+                    <h4>🏥 GVMC (Municipal Corp)</h4>
+                    <p><strong>Phone:</strong> <a href="tel:0891-2746464">0891-2746464</a></p>
+                    <p><strong>Helpline:</strong> <a href="tel:0891-2590590">0891-2590590</a></p>
+                    <p><strong>Website:</strong> gvmc.gov.in</p>
+                </div>
+                <div class="contact-card">
+                    <h4>🚑 King George Hospital</h4>
+                    <p><strong>Emergency:</strong> <a href="tel:0891-2563333">0891-2563333</a></p>
+                    <p><strong>Ambulance:</strong> <a href="tel:108">108</a></p>
+                    <p><strong>Blood Bank:</strong> <a href="tel:0891-2844488">0891-2844488</a></p>
+                </div>
+            </div>
+
+            <h3>Vizianagaram District</h3>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h4>🏛️ District Collectorate</h4>
+                    <p><strong>Phone:</strong> <a href="tel:08922-228228">08922-228228</a></p>
+                    <p><strong>Emergency:</strong> <a href="tel:08922-220220">08922-220220</a></p>
+                    <p><strong>Email:</strong> collector_vzm@ap.gov.in</p>
+                </div>
+                <div class="contact-card">
+                    <h4>🏥 Municipal Corporation</h4>
+                    <p><strong>Phone:</strong> <a href="tel:08922-228228">08922-228228</a></p>
+                    <p><strong>Helpline:</strong> <a href="tel:08922-225225">08922-225225</a></p>
+                </div>
+                <div class="contact-card">
+                    <h4>🚑 Government Hospital</h4>
+                    <p><strong>Emergency:</strong> <a href="tel:08922-222333">08922-222333</a></p>
+                    <p><strong>Ambulance:</strong> <a href="tel:108">108</a></p>
+                </div>
+            </div>
+
+            <h3>Krishna District (Vijayawada)</h3>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h4>🏛️ District Collectorate</h4>
+                    <p><strong>Phone:</strong> <a href="tel:0866-2574488">0866-2574488</a></p>
+                    <p><strong>Emergency:</strong> <a href="tel:0866-2429999">0866-2429999</a></p>
+                    <p><strong>Email:</strong> collector_krishna@ap.gov.in</p>
+                </div>
+                <div class="contact-card">
+                    <h4>🏥 VMC (Municipal Corp)</h4>
+                    <p><strong>Phone:</strong> <a href="tel:0866-2574488">0866-2574488</a></p>
+                    <p><strong>Helpline:</strong> <a href="tel:0866-2434343">0866-2434343</a></p>
+                </div>
+                <div class="contact-card">
+                    <h4>🚑 Govt General Hospital</h4>
+                    <p><strong>Emergency:</strong> <a href="tel:0866-2578911">0866-2578911</a></p>
+                    <p><strong>Ambulance:</strong> <a href="tel:108">108</a></p>
+                </div>
+            </div>
+
+            <h3>Guntur District</h3>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h4>🏛️ District Collectorate</h4>
+                    <p><strong>Phone:</strong> <a href="tel:0863-2323232">0863-2323232</a></p>
+                    <p><strong>Emergency:</strong> <a href="tel:0863-2228888">0863-2228888</a></p>
+                    <p><strong>Email:</strong> collector_guntur@ap.gov.in</p>
+                </div>
+                <div class="contact-card">
+                    <h4>🏥 Municipal Corporation</h4>
+                    <p><strong>Phone:</strong> <a href="tel:0863-2323232">0863-2323232</a></p>
+                    <p><strong>Helpline:</strong> <a href="tel:0863-2345678">0863-2345678</a></p>
+                </div>
+                <div class="contact-card">
+                    <h4>🚑 Medical College Hospital</h4>
+                    <p><strong>Emergency:</strong> <a href="tel:0863-2287777">0863-2287777</a></p>
+                    <p><strong>Ambulance:</strong> <a href="tel:108">108</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-section">
+            <h2>NGO & Relief Organizations</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h4>❤️ Indian Red Cross Society</h4>
+                    <p><strong>National:</strong> <a href="tel:011-23711551">011-23711551</a></p>
+                    <p><strong>AP State:</strong> <a href="tel:0863-2340150">0863-2340150</a></p>
+                    <p><strong>Website:</strong> indianredcross.org</p>
+                </div>
+                <div class="contact-card">
+                    <h4>🍲 Akshaya Patra Foundation</h4>
+                    <p><strong>Helpline:</strong> <a href="tel:1800-103-7555">1800-103-7555</a></p>
+                    <p><strong>Vizag:</strong> <a href="tel:0891-2999999">0891-2999999</a></p>
+                    <p><strong>Website:</strong> akshayapatra.org</p>
+                </div>
+                <div class="contact-card">
+                    <h4>👥 Ramakrishna Mission</h4>
+                    <p><strong>Phone:</strong> <a href="tel:033-22690432">033-22690432</a></p>
+                    <p><strong>Relief:</strong> <a href="tel:033-22690433">033-22690433</a></p>
+                    <p><strong>Website:</strong> rkmm.org</p>
+                </div>
+                <div class="contact-card">
+                    <h4>🌿 Oxfam India</h4>
+                    <p><strong>Phone:</strong> <a href="tel:011-43510162">011-43510162</a></p>
+                    <p><strong>Emergency:</strong> <a href="tel:1800-102-0606">1800-102-0606</a></p>
+                    <p><strong>Website:</strong> oxfamindia.org</p>
+                </div>
+                <div class="contact-card">
+                    <h4>🌍 UNICEF India</h4>
+                    <p><strong>Phone:</strong> <a href="tel:011-24690401">011-24690401</a></p>
+                    <p><strong>Child Helpline:</strong> <a href="tel:1098">1098</a></p>
+                    <p><strong>Website:</strong> unicef.in</p>
+                </div>
+                <div class="contact-card">
+                    <h4>👊 Save the Children</h4>
+                    <p><strong>Phone:</strong> <a href="tel:011-43759000">011-43759000</a></p>
+                    <p><strong>Emergency:</strong> <a href="tel:1800-102-7777">1800-102-7777</a></p>
+                    <p><strong>Website:</strong> savethechildren.in</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-section">
+            <h2>Report Issues or Update Information</h2>
+            <p>
+                If you notice any incorrect information, non-functional contact numbers, or want to add a new relief center, 
+                please help us keep this platform updated.
+            </p>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h4>📧 Email Us</h4>
+                    <p><strong>General:</strong> info@disasterrelief.gov.in</p>
+                    <p><strong>Updates:</strong> updates@disasterrelief.gov.in</p>
+                    <p><strong>Technical:</strong> support@disasterrelief.gov.in</p>
+                </div>
+                <div class="contact-card">
+                    <h4>📞 Phone Support</h4>
+                    <p><strong>Helpdesk:</strong> 1800-XXX-XXXX</p>
+                    <p><strong>Hours:</strong> Mon-Fri, 9 AM - 6 PM</p>
+                    <p><strong>Emergency:</strong> 24/7 via emergency numbers</p>
+                </div>
+                <div class="contact-card">
+                    <h4>📍 Address</h4>
+                    <p>Disaster Management Authority</p>
+                    <p>Government of Andhra Pradesh</p>
+                    <p>Amaravati, Andhra Pradesh</p>
+                    <p>PIN: 522020</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-banner">
+            📌 Bookmark this page and save emergency numbers in your phone contacts now!
+        </div>
+    </div>
+</body>
+</html>

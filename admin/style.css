@@ -1,0 +1,51 @@
+:root{ --bg:#0b1215; --card:#101b20; --accent:#2dd4bf; --text:#e6f3f1; --muted:#8fb3b1; --danger:#ff6b6b; }
+*{ box-sizing:border-box; margin:0; padding:0; }
+body{ font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial; background:var(--bg); color:var(--text); line-height:1.6; }
+
+/* Login Page */
+.login-container{ max-width:400px; margin:100px auto; padding:30px; background:var(--card); border:1px solid #14242a; border-radius:12px; }
+.login-container h1{ margin-bottom:20px; text-align:center; }
+.login-container form{ display:flex; flex-direction:column; gap:15px; }
+.login-container label{ display:flex; flex-direction:column; gap:5px; }
+.login-container input{ padding:10px; background:#0f1a1f; color:var(--text); border:1px solid #1b2d35; border-radius:6px; }
+.login-container button{ padding:12px; background:var(--accent); color:#083b35; border:none; border-radius:6px; font-weight:600; cursor:pointer; }
+.login-container button:hover{ opacity:0.9; }
+.error{ padding:10px; background:#3d1f1f; color:var(--danger); border:1px solid #5a2a2a; border-radius:6px; margin-bottom:15px; }
+.hint{ text-align:center; color:var(--muted); font-size:14px; margin-top:15px; }
+
+/* Admin Dashboard */
+.admin-header{ display:flex; justify-content:space-between; align-items:center; padding:15px 20px; background:#0e171b; border-bottom:1px solid #122126; }
+.admin-header h1{ font-size:20px; }
+.admin-header nav a{ color:var(--muted); text-decoration:none; margin-left:15px; }
+.admin-header nav a:hover{ color:var(--accent); }
+
+.admin-main{ padding:20px; max-width:1400px; margin:0 auto; }
+
+.controls{ display:flex; gap:10px; margin-bottom:20px; }
+.btn-primary{ background:var(--accent); color:#083b35; border:none; padding:10px 20px; border-radius:6px; font-weight:600; cursor:pointer; }
+.btn-secondary{ background:#1b2d35; color:var(--text); border:1px solid #2a3f4a; padding:10px 20px; border-radius:6px; cursor:pointer; }
+.btn-primary:hover, .btn-secondary:hover{ opacity:0.9; }
+
+.form-section{ background:var(--card); border:1px solid #14242a; border-radius:10px; padding:20px; margin-bottom:20px; }
+.form-section h2{ margin-bottom:15px; }
+.form-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:15px; margin-bottom:20px; }
+.form-grid label{ display:flex; flex-direction:column; gap:5px; }
+.form-grid input, .form-grid select, .form-grid textarea{ padding:8px; background:#0f1a1f; color:var(--text); border:1px solid #1b2d35; border-radius:6px; }
+.form-actions{ display:flex; gap:10px; }
+
+.table-section{ background:var(--card); border:1px solid #14242a; border-radius:10px; padding:20px; }
+.table-section h2{ margin-bottom:15px; }
+.status{ padding:10px; border-radius:6px; margin-bottom:15px; }
+.status.success{ background:#1a3d37; color:#3be1ca; border:1px solid #2a5d57; }
+.status.error{ background:#3d1f1f; color:var(--danger); border:1px solid #5a2a2a; }
+.status.info{ background:#1a2d3d; color:#6bb6ff; border:1px solid #2a4d6d; }
+
+table{ width:100%; border-collapse:collapse; }
+thead{ background:#0f1a1f; }
+th, td{ padding:12px; text-align:left; border-bottom:1px solid #1a2c33; }
+th{ font-weight:600; color:var(--accent); }
+tbody tr:hover{ background:#0f1a1f; }
+
+.btn-edit{ background:#2a5d57; color:#3be1ca; border:none; padding:6px 12px; border-radius:4px; cursor:pointer; margin-right:5px; }
+.btn-delete{ background:#5a2a2a; color:var(--danger); border:none; padding:6px 12px; border-radius:4px; cursor:pointer; }
+.btn-edit:hover, .btn-delete:hover{ opacity:0.8; }

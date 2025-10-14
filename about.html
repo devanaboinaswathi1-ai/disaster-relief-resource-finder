@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Disaster Relief Resource Finder</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .content-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+        .about-section {
+            background: var(--card);
+            border: 1px solid #14242a;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+        }
+        .about-section h2 {
+            color: var(--accent);
+            margin-top: 0;
+            font-size: 24px;
+            border-bottom: 2px solid #1b2d35;
+            padding-bottom: 12px;
+        }
+        .about-section h3 {
+            color: #d8f2ef;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .about-section p, .about-section ul, .about-section ol {
+            color: var(--muted);
+            line-height: 1.8;
+            font-size: 15px;
+        }
+        .about-section ul, .about-section ol {
+            padding-left: 20px;
+        }
+        .about-section li {
+            margin-bottom: 8px;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+        .feature-card {
+            background: #0f1a1f;
+            border: 1px solid #1a2c33;
+            border-radius: 8px;
+            padding: 16px;
+        }
+        .feature-card h4 {
+            color: var(--accent);
+            margin-top: 0;
+            font-size: 16px;
+        }
+        .feature-card p {
+            margin: 8px 0 0;
+            font-size: 14px;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+        .stat-box {
+            background: linear-gradient(135deg, #0f1a1f 0%, #14242a 100%);
+            border: 1px solid var(--accent);
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 32px;
+            font-weight: bold;
+            color: var(--accent);
+            margin: 0;
+        }
+        .stat-label {
+            color: var(--muted);
+            font-size: 14px;
+            margin-top: 8px;
+        }
+        .emergency-banner {
+            background: linear-gradient(135deg, #2dd4bf 0%, #14b8a6 100%);
+            color: #083b35;
+            padding: 16px 24px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            text-align: center;
+        }
+        .back-link {
+            display: inline-block;
+            color: var(--accent);
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="topbar">
+        <h1>Disaster Relief Resource Finder</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="content-wrapper">
+        <a href="index.html" class="back-link">← Back to Map</a>
+
+        <div class="emergency-banner">
+            🚨 24/7 Emergency Helpline: 1800-425-0000 | National Disaster Response Force (NDRF)
+        </div>
+
+        <div class="about-section">
+            <h2>About Disaster Relief Resource Finder</h2>
+            <p>
+                The Disaster Relief Resource Finder is a comprehensive, real-time platform designed to help citizens 
+                quickly locate essential relief resources during natural disasters and emergencies across Andhra Pradesh 
+                and other major cities in India.
+            </p>
+            <p>
+                Our mission is to save lives by providing instant access to critical information about shelters, 
+                medical facilities, food distribution centers, and water supply points during times of crisis.
+            </p>
+
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <p class="stat-number">100+</p>
+                    <p class="stat-label">Relief Centers</p>
+                </div>
+                <div class="stat-box">
+                    <p class="stat-number">10+</p>
+                    <p class="stat-label">Cities Covered</p>
+                </div>
+                <div class="stat-box">
+                    <p class="stat-number">24/7</p>
+                    <p class="stat-label">Real-time Updates</p>
+                </div>
+                <div class="stat-box">
+                    <p class="stat-number">4</p>
+                    <p class="stat-label">Resource Types</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-section">
+            <h2>Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h4>🗺️ Interactive Map</h4>
+                    <p>Visual representation of all relief centers with real-time location tracking and distance calculation.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>📍 Location-Based Search</h4>
+                    <p>Find nearby resources using your current location or search by city with customizable radius.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>🏥 Multiple Resource Types</h4>
+                    <p>Access shelters, medical facilities, food distribution points, and water supply centers.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>📱 Mobile Responsive</h4>
+                    <p>Works seamlessly on all devices - desktop, tablet, and mobile phones.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>⏰ Operating Hours</h4>
+                    <p>View opening hours and availability of each relief center in real-time.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>📞 Contact Information</h4>
+                    <p>Direct access to phone numbers and addresses for immediate assistance.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-section">
+            <h2>Coverage Areas</h2>
+            <h3>Andhra Pradesh</h3>
+            <ul>
+                <li><strong>Visakhapatnam (Vizag)</strong> - 17 relief centers including KGH, Apollo Hospital, GVMC Relief Centers</li>
+                <li><strong>Vizianagaram</strong> - 14 relief centers with government hospitals and community kitchens</li>
+                <li><strong>Vijayawada</strong> - Municipal relief centers, Government General Hospital, Anna Canteens</li>
+                <li><strong>Guntur</strong> - Medical colleges, community kitchens, water supply centers</li>
+                <li><strong>Machilipatnam</strong> - Coastal relief centers, port water stations, district hospitals</li>
+            </ul>
+
+            <h3>Other Major Cities</h3>
+            <ul>
+                <li><strong>Hyderabad</strong> - State capital with comprehensive relief infrastructure</li>
+                <li><strong>Chennai</strong> - Coastal disaster management centers</li>
+                <li><strong>Bangalore</strong> - Urban relief facilities</li>
+                <li><strong>Mumbai</strong> - Metropolitan emergency services</li>
+                <li><strong>Delhi</strong> - National capital region resources</li>
+            </ul>
+        </div>
+
+        <div class="about-section">
+            <h2>Resource Types</h2>
+            
+            <h3>🏠 Shelter Centers</h3>
+            <p>
+                Emergency accommodation facilities including municipal relief camps, community halls, stadiums, 
+                and government buildings equipped with beds, blankets, and basic amenities.
+            </p>
+
+            <h3>🏥 Medical Facilities</h3>
+            <p>
+                Government hospitals, primary health centers, mobile medical units, and Red Cross centers 
+                providing emergency care, medicines, ambulance services, and specialized treatment.
+            </p>
+
+            <h3>🍲 Food Distribution Centers</h3>
+            <p>
+                Anna Canteens, community kitchens, NGO food distribution points, and government relief centers 
+                offering free or subsidized meals, packaged food, and emergency rations.
+            </p>
+
+            <h3>💧 Water Supply Points</h3>
+            <p>
+                Municipal water supply centers, treatment plants, water tanker distribution points, and 
+                emergency water purification stations ensuring access to clean drinking water.
+            </p>
+        </div>
+
+        <div class="about-section">
+            <h2>How to Use</h2>
+            <ol>
+                <li><strong>Select Location:</strong> Choose your city from the dropdown or use "Use My Location" button</li>
+                <li><strong>Filter by Type:</strong> Select the type of resource you need (shelter, food, medical, water)</li>
+                <li><strong>Set Radius:</strong> Adjust the search radius (1-100 km) to find nearby centers</li>
+                <li><strong>Click Search:</strong> View results on the interactive map and in the list panel</li>
+                <li><strong>Get Details:</strong> Click on markers or list items to see complete information including address, phone, hours, and available supplies</li>
+            </ol>
+        </div>
+
+        <div class="about-section">
+            <h2>Emergency Contacts</h2>
+            <ul>
+                <li><strong>National Disaster Response Force (NDRF):</strong> 1800-425-0000</li>
+                <li><strong>State Disaster Management:</strong> 1070</li>
+                <li><strong>Police Emergency:</strong> 100</li>
+                <li><strong>Ambulance:</strong> 108</li>
+                <li><strong>Fire Services:</strong> 101</li>
+                <li><strong>Women Helpline:</strong> 1091</li>
+                <li><strong>Child Helpline:</strong> 1098</li>
+                <li><strong>Senior Citizen Helpline:</strong> 1091</li>
+            </ul>
+        </div>
+
+        <div class="about-section">
+            <h2>Data Sources & Accuracy</h2>
+            <p>
+                All relief center information is compiled from official government sources, municipal corporations, 
+                verified NGOs, and public health departments. We strive to maintain real-time accuracy of all data 
+                including contact numbers, addresses, and operating hours.
+            </p>
+            <p>
+                <strong>Last Updated:</strong> October 2025<br>
+                <strong>Data Verification:</strong> Continuous monitoring and updates
+            </p>
+        </div>
+
+        <div class="about-section">
+            <h2>Technology Stack</h2>
+            <ul>
+                <li><strong>Mapping:</strong> Leaflet.js with OpenStreetMap</li>
+                <li><strong>Database:</strong> MySQL (phpMyAdmin)</li>
+                <li><strong>Backend:</strong> PHP</li>
+                <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript</li>
+                <li><strong>Geolocation:</strong> HTML5 Geolocation API</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
